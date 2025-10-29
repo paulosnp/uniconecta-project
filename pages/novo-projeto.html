@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar Demanda - UniConecta</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <link rel="stylesheet" href="../assets/css/login.css">
+
+    <link rel="stylesheet" href="../assets/css/novo-projeto.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">UniConecta</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Meu Painel</a></li>
+                    <li><a href="projetos.html">Buscar Projetos</a></li>
+                    <li><a href="novo-projeto.html" class="active">Publicar Demanda</a></li>
+                    <li><a href="perfil.html">Meu Perfil</a></li>
+                    <li><a href="../index.html" class="btn btn-secondary">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="form-page-main">
+        <div class="container">
+            
+            <div class="form-container-box">
+                <header class="form-header">
+                    <h2>Publique sua Demanda</h2>
+                    <p>Descreva sua necessidade e conecte-se com estudantes prontos para ajudar. </p>
+                </header>
+
+                <form id="form-novo-projeto">
+                    
+                    <div class="form-field">
+                        <label for="proj-titulo">Título do Projeto</label>
+                        <p class="field-desc">Dê um nome claro e objetivo. (Ex: "Criação de logotipo para cafeteria")</p>
+                        <input type="text" id="proj-titulo" name="proj-titulo" required>
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="proj-descricao">Descrição Detalhada</label>
+                        <p class="field-desc">Seja específico sobre o que você precisa, o contexto e os resultados esperados.</p>
+                        <textarea id="proj-descricao" name="proj-descricao" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="proj-area">Área de Atuação</label>
+                        <p class="field-desc">Selecione a categoria que melhor se encaixa na sua demanda. [cite: 13]</p>
+                        <select id="proj-area" name="proj-area" required>
+                            <option value="" disabled selected>Selecione uma área...</option>
+                            <option value="tecnologia">Tecnologia e Programação</option>
+                            <option value="design">Design e Criação</option>
+                            <option value="marketing">Marketing e Comunicação</option>
+                            <option value="educacao">Educação e Reforço Escolar</option>
+                            <option value="direito">Consultoria Jurídica</option>
+                            <option value="outra">Outra</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-field">
+                        <label>Tipo de Trabalho [cite: 14]</label>
+                        <p class="field-desc">Isso é um trabalho voluntário ou remunerado? [cite: 14]</p>
+                        <div class="radio-group">
+                            <input type="radio" id="tipo-voluntario" name="proj_tipo" value="voluntario" checked>
+                            <label for="tipo-voluntario">Voluntário</label>
+                            
+                            <input type="radio" id="tipo-remunerado" name="proj_tipo" value="remunerado">
+                            <label for="tipo-remunerado">Remunerado</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-large">Publicar Projeto</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div> </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                 <div class="footer-col">
+                    <h3 class="logo">UniConecta</h3>
+                    <p>Conectando estudantes universitários a pessoas e organizações que necessitam de soluções simples, promovendo a troca de conhecimento.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="projetos.html">Buscar Projetos</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Central de Ajuda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UniConecta. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/form.js"></script>
+
+</body>
+</html>

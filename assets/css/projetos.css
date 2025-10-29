@@ -1,0 +1,161 @@
+/* /assets/css/projetos.css */
+
+/* --- 1. Cabeçalho da Página --- */
+.projects-header {
+    background-color: var(--card-bg);
+    padding: 2rem 2.5rem;
+    border-radius: 8px;
+    margin-bottom: 2.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.projects-header h2 {
+    font-size: 2.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.projects-header p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+/* --- 2. Layout (Filtros + Resultados) --- */
+.projects-layout {
+    display: grid;
+    /* Coluna de filtro tem 1fr (aprox 25-30%), 
+       Coluna de resultados tem 3fr (aprox 70-75%) */
+    grid-template-columns: 1fr 3fr;
+    gap: 2.5rem;
+}
+
+/* --- 3. Estilos da Barra Lateral de Filtros --- */
+.projects-filters {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    /* Faz a sidebar "grudar" no topo quando o usuário rola a página */
+    position: sticky;
+    top: 100px; /* (altura da navbar + um espaço) */
+    align-self: start; /* Impede que ela estique */
+}
+
+.projects-filters h4 {
+    font-size: 1.3rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.filter-group {
+    margin-bottom: 1.5rem;
+}
+
+.filter-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo para inputs de texto e selects */
+.filter-group input[type="text"],
+.filter-group select {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: var(--font-stack);
+}
+.filter-group input[type="text"]:focus,
+.filter-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.checkbox-group input {
+    margin-right: 0.5rem;
+}
+.checkbox-group label {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+
+/* --- 4. Estilos dos Cards de Resultado --- */
+.result-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.result-card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.card-header h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+.card-org {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.card-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.card-tags .tag {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px; /* Pílula */
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    color: #fff;
+}
+
+/* Cores das Tags (Exemplos) */
+.tag-voluntario { background-color: #6c757d; }
+.tag-remunerado { background-color: #28a745; }
+.tag-tecnologia { background-color: #007bff; }
+.tag-design     { background-color: #fd7e14; }
+.tag-marketing  { background-color: #dc3545; }
+
+
+/* --- 5. Responsividade --- */
+@media (max-width: 992px) {
+    .projects-layout {
+        /* Em telas menores, os filtros vão para cima */
+        grid-template-columns: 1fr;
+    }
+    .projects-filters {
+        position: static; /* Remove o "grudar" */
+        top: auto;
+    }
+}

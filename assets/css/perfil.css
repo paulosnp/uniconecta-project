@@ -1,0 +1,225 @@
+/* /assets/css/perfil.css */
+
+.profile-main {
+    padding: 2.5rem 0;
+}
+
+.profile-header {
+    margin-bottom: 2.5rem;
+}
+.profile-header h2 {
+    font-size: 2.25rem;
+    margin-bottom: 0.25rem;
+}
+.profile-header p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+/* --- 1. Layout Principal (Formulário + Sidebar) --- */
+.profile-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2.5rem;
+    align-items: flex-start; /* Alinha no topo */
+}
+
+/* --- 2. Estilo do Card Principal (Formulário) --- */
+.profile-card {
+    background-color: var(--card-bg);
+    padding: 2.5rem 3rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.profile-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Linha horizontal para separar seções do form */
+.form-divider {
+    margin-top: 2.5rem;
+}
+
+/* Upload de Foto (RF05) */
+.profile-pic-uploader {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 2rem auto;
+}
+
+.profile-pic-uploader img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover; /* Garante que a foto não distorça */
+    border: 4px solid var(--card-bg);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.pic-change-link {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+.pic-change-link:hover {
+    background-color: var(--primary-hover);
+    color: #fff;
+}
+
+
+/* Campos do Formulário */
+.profile-field {
+    margin-bottom: 1.5rem;
+}
+.profile-field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.profile-field input[type="text"],
+.profile-field input[type="email"],
+.profile-field textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: var(--font-stack);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-field textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.profile-field input:focus,
+.profile-field textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}
+
+/* Inputs desabilitados */
+.profile-field input:disabled {
+    background-color: var(--body-bg);
+    color: var(--text-light);
+    cursor: not-allowed;
+}
+
+.profile-field small {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.profile-submit {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+
+/* --- 3. Estilo da Sidebar (Habilidades, Histórico) --- */
+.sidebar-box {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1.5rem;
+    position: sticky;
+    top: 100px;
+}
+.sidebar-box h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+}
+.sidebar-box p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+/* Habilidades (RF06) */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap; /* Quebra a linha se tiver muitas skills */
+    gap: 0.5rem; /* Espaço entre as tags */
+    margin-bottom: 1.5rem;
+}
+
+.skill-tag {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.add-skill-form {
+    display: flex;
+    gap: 0.5rem;
+}
+.add-skill-form input {
+    flex-grow: 1; /* Input ocupa o espaço disponível */
+    padding: 8px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+.add-skill-form button {
+    padding: 0 14px; /* Deixa o botão mais "quadrado" */
+    font-size: 1.2rem;
+}
+
+/* Histórico (RF05) */
+.history-list {
+    list-style: none;
+    padding: 0;
+}
+.history-list li {
+    font-size: 0.9rem;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+.history-list li:last-child {
+    border-bottom: none;
+}
+.history-list li a {
+    font-weight: 600;
+}
+
+
+/* --- 4. Responsividade --- */
+@media (max-width: 992px) {
+    .profile-layout {
+        /* Em telas menores, a sidebar vai para baixo */
+        grid-template-columns: 1fr;
+    }
+    .profile-sidebar {
+        position: static; /* Remove o "grudar" */
+        top: auto;
+    }
+    .profile-card {
+        padding: 2rem;
+    }
+}

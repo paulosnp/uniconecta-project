@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - UniConecta</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+<body class="login-page"> <main class="login-card">
+        <a href="../index.html" class="logo">UniConecta</a>
+        <h2>Crie sua conta</h2>
+        <p class="subtitle">Comece sua jornada de aprendizado e impacto.</p>
+
+        <form id="register-form">
+            
+            <div class="form-group" style="text-align: center;">
+                <label style="margin-bottom: 1rem; display: block;">Eu sou:</label>
+                <div class="radio-group">
+                    <input type="radio" id="tipo-estudante" name="user_type" value="student" checked>
+                    <label for="tipo-estudante">Estudante</label>
+                    
+                    <input type="radio" id="tipo-comunidade" name="user_type" value="community">
+                    <label for="tipo-comunidade">Comunidade</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group" id="student-fields">
+                <label for="university">Universidade (Ex: UNIT-PE) [cite: 1]</label>
+                <input type="text" id="university" name="university">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Criar Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password-confirm">Confirmar Senha</label>
+                <input type="password" id="password-confirm" name="password-confirm" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Criar Conta</button>
+
+            <div class="login-links" style="justify-content: center; margin-top: 1.5rem;">
+                <a href="login.html">Já tenho uma conta</a>
+            </div>
+        </form>
+    </main>
+    
+    <script>
+        // Este é um JS simples para o protótipo
+        const studentFields = document.getElementById('student-fields');
+        
+        document.getElementById('tipo-estudante').addEventListener('change', () => {
+            studentFields.style.display = 'block';
+        });
+        
+        document.getElementById('tipo-comunidade').addEventListener('change', () => {
+            studentFields.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

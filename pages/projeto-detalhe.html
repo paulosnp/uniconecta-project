@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Projeto - UniConecta</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <link rel="stylesheet" href="../assets/css/projeto-detalhe.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">UniConecta</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Meu Painel</a></li>
+                    <li><a href="projetos.html" class="active">Buscar Projetos</a></li>
+                    <li><a href="novo-projeto.html">Publicar Demanda</a></li>
+                    <li><a href="perfil.html">Meu Perfil</a></li>
+                    <li><a href="../index.html" class="btn btn-secondary">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-detail-main">
+        <div class="container">
+            
+            <div class="project-layout">
+
+                <section class="project-content">
+                    
+                    <div class="project-box" id="detalhes">
+                        <span class="project-tag tag-tecnologia">Tecnologia</span>
+                        <span class="project-tag tag-voluntario">Voluntário</span>
+                        
+                        <h2>Desenvolvimento de site para ONG "Adote um Amigo"</h2>
+                        <p class="project-description">
+                            Precisamos de um estudante para criar um site simples em WordPress para divulgar nossos animais para adoção. O site deve ter uma galeria de fotos, um formulário de contato e uma página "Sobre Nós". Já temos o logo e os textos.
+                        </p>
+                    </div>
+                    
+                    <div class="project-box" id="chat-feed">
+                        <h3>Chat e Histórico de Atividades</h3>
+                        
+                        <div class="chat-window">
+                            <div class="chat-message message-other">
+                                <span class="message-author">ONG Adote um Amigo</span>
+                                <p>Olá! Que bom que você aceitou o projeto. Estamos muito animados!</p>
+                                <span class="message-time">26/10/2025, 14:30</span>
+                            </div>
+                            
+                            <div class="chat-message message-self">
+                                <span class="message-author">Henrique Fernandes</span>
+                                <p>Eu que agradeço a oportunidade! Já dei uma olhada no material. Vou começar a configurar o WordPress hoje mesmo.</p>
+                                <span class="message-time">26/10/2025, 14:32</span>
+                            </div>
+                            
+                            <div class="chat-event">
+                                <span><strong>ONG Adote um Amigo</strong> fez upload de <strong>logo_ong.zip</strong></span>
+                            </div>
+
+                            <div class="chat-message message-other">
+                                <p>Perfeito! Acabei de subir o zip com o logo e as fotos que temos.</p>
+                                <span class="message-time">26/10/2025, 14:35</span>
+                            </div>
+                        </div>
+                        
+                        <form class="chat-input-area">
+                            <textarea placeholder="Digite sua mensagem..." rows="3"></textarea>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+
+                    <div class="project-box" id="avaliacao" style="display: none;"> <h3>Avaliar Projeto (Concluído)</h3>
+                        <p>O projeto foi marcado como concluído. Por favor, deixe sua avaliação.</p>
+                        <form>
+                            <label>Sua nota (de 1 a 5):</label>
+                            <input type="number" min="1" max="5" style="width: 100px;">
+                            <label>Seu comentário:</label>
+                            <textarea rows="4"></textarea>
+                            <button type="submit" class="btn btn-primary">Enviar Avaliação</button>
+                        </form>
+                    </div>
+
+                </section>
+
+                <aside class="project-sidebar">
+                    
+                    <div class="sidebar-box">
+                        <h4>Status do Projeto</h4>
+                        <p class="status-em-andamento">Em Andamento</p>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Marcar como Concluído</button>
+                        <button class="btn btn-secondary" style="width: 100%; margin-top: 0.5rem;">Cancelar Projeto</button>
+                    </div>
+                    
+                    <div class="sidebar-box">
+                        <h4>Participantes</h4>
+                        <div class="participant">
+                            <span>Comunidade:</span>
+                            <strong>ONG Adote um Amigo</strong>
+                        </div>
+                         <div class="participant">
+                            <span>Estudante:</span>
+                            <strong>Henrique Fernandes</strong>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-box">
+                        <h4>Arquivos do Projeto</h4>
+                        <ul class="file-list">
+                            <li>logo_ong.zip (1.2 MB)</li>
+                            <li>textos_site.docx (45 KB)</li>
+                            <li>fotos_animais_01.jpg (3.4 MB)</li>
+                        </ul>
+                        <button class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">Carregar Arquivo</button>
+                    </div>
+
+                </aside>
+
+            </div> </div> </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                 <div class="footer-col">
+                    <h3 class="logo">UniConecta</h3>
+                    <p>Conectando estudantes universitários a pessoas e organizações que necessitam de soluções simples, promovendo a troca de conhecimento.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="projetos.html">Buscar Projetos</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Central de Ajuda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UniConecta. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

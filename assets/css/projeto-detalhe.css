@@ -1,0 +1,194 @@
+/* /assets/css/projeto-detalhe.css */
+
+.project-detail-main {
+    padding: 2.5rem 0;
+}
+
+/* --- 1. Layout Principal (Conteúdo + Sidebar) --- */
+.project-layout {
+    display: grid;
+    /* Coluna principal é 2x maior que a sidebar */
+    grid-template-columns: 2fr 1fr;
+    gap: 2.5rem;
+    align-items: flex-start; /* Alinha no topo */
+}
+
+/* --- 2. Estilo dos Blocos da Coluna Principal --- */
+.project-box {
+    background-color: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 2rem;
+}
+
+/* Tags de categoria no topo do bloco */
+.project-tag {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+/* (Copiado do projetos.css - idealmente, isso viraria uma classe global) */
+.tag-voluntario { background-color: #6c757d; }
+.tag-tecnologia { background-color: #007bff; }
+
+.project-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.project-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-light);
+}
+
+.project-box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* --- 3. Estilo do Chat (RF11) --- */
+.chat-window {
+    height: 400px; /* Altura fixa para o chat */
+    overflow-y: auto; /* Barra de rolagem */
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--body-bg); /* Fundo cinza claro */
+}
+
+.chat-message {
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    max-width: 80%;
+}
+.chat-message p {
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+}
+.chat-message .message-author {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.chat-message .message-time {
+    font-size: 0.75rem;
+    color: var(--text-light);
+}
+
+/* Mensagem Própria (Estudante) */
+.message-self {
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-left: auto; /* Alinha à direita */
+    border-bottom-right-radius: 0;
+}
+.message-self .message-author,
+.message-self .message-time {
+    color: #eee;
+}
+
+/* Mensagem do Outro (Comunidade) */
+.message-other {
+    background-color: #e9ecef;
+    color: var(--text-color);
+    margin-right: auto; /* Alinha à esquerda */
+    border-bottom-left-radius: 0;
+}
+
+/* Evento do sistema (ex: upload) */
+.chat-event {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+/* Área de digitar mensagem */
+.chat-input-area {
+    display: flex;
+    gap: 1rem;
+}
+.chat-input-area textarea {
+    flex-grow: 1; /* Ocupa o máximo de espaço */
+    resize: none;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-family: var(--font-stack);
+}
+.chat-input-area .btn {
+    align-self: flex-end; /* Alinha o botão embaixo */
+}
+
+/* --- 4. Estilo da Sidebar --- */
+.sidebar-box {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1.5rem;
+    position: sticky; /* Sidebar "gruda" ao rolar */
+    top: 100px;
+}
+.sidebar-box h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+/* Status do projeto (ex: Em Andamento) */
+.sidebar-box .status-em-andamento {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffa500; /* Laranja */
+}
+
+.participant {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+.participant span {
+    color: var(--text-light);
+}
+
+.file-list {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+}
+.file-list li {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.file-list li:hover {
+    text-decoration: underline;
+}
+
+/* --- 5. Responsividade --- */
+@media (max-width: 992px) {
+    .project-layout {
+        /* Em telas menores, a sidebar vai para baixo */
+        grid-template-columns: 1fr;
+    }
+    .project-sidebar {
+        position: static; /* Remove o "grudar" */
+        top: auto;
+    }
+}

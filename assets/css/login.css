@@ -1,0 +1,124 @@
+/* /assets/css/login.css */
+
+/* Este seletor aplica os estilos ao <body> APENAS se ele
+  tiver a classe "login-page". Isso é uma ótima prática.
+*/
+.login-page {
+    /* Centraliza o conteúdo verticalmente e horizontalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--body-bg);
+}
+
+.login-card {
+    background-color: var(--card-bg);
+    padding: 3rem 2.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    width: 100%;
+    max-width: 420px; /* Largura máxima da caixa de login */
+    text-align: center;
+}
+
+.login-card .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.login-card h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.login-card .subtitle {
+    color: var(--text-light);
+    margin-bottom: 2.5rem;
+}
+
+/* --- Estilos do Formulário --- */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: var(--font-stack);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito profissional ao focar no campo */
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}
+
+/* Faz o botão ocupar 100% da largura */
+.login-card .btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* /assets/css/login.css */
+
+/* ... (todo o código que já estava lá) ... */
+
+
+/* --- Estilos Adicionais para a Página de Cadastro --- */
+.radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Esconde o "radio" original */
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+/* Estiliza o "label" para parecer um botão */
+.radio-group label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Estilo do botão de rádio QUANDO SELECIONADO */
+.radio-group input[type="radio"]:checked + label {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0, 86, 179, 0.2);
+}
+
+.radio-group label:hover {
+    border-color: var(--primary-hover);
+}

@@ -1,0 +1,90 @@
+/* /assets/css/novo-projeto.css */
+
+.form-page-main {
+    padding: 2.5rem 0;
+}
+
+/* O "card" branco que segura o formulário */
+.form-container-box {
+    max-width: 800px; /* Limita a largura do formulário */
+    margin: 0 auto; /* Centraliza */
+    padding: 3rem 3.5rem;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+}
+
+.form-header {
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.form-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-header p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+/* --- Estilo dos Campos do Formulário --- */
+.form-field {
+    margin-bottom: 2rem;
+}
+
+.form-field label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Descrição de ajuda abaixo do label */
+.form-field .field-desc {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 0.75rem;
+    font-style: italic;
+}
+
+/* Estilo padrão para todos os campos */
+.form-field input[type="text"],
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: var(--font-stack);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-field input[type="text"]:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}
+
+.form-field textarea {
+    height: 150px;
+    resize: vertical; /* Permite ao usuário redimensionar só na vertical */
+}
+
+/* (Nós linkamos o login.css no HTML, então a
+   classe .radio-group já está estilizada) */
+
+
+.form-submit {
+    text-align: right; /* Alinha o botão à direita */
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}

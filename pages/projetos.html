@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Projetos - UniConecta</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <link rel="stylesheet" href="../assets/css/projetos.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">UniConecta</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Meu Painel</a></li>
+                    <li><a href="projetos.html" class="active">Buscar Projetos</a></li>
+                    <li><a href="novo-projeto.html">Publicar Demanda</a></li>
+                    <li><a href="perfil.html">Meu Perfil</a></li>
+                    <li><a href="../index.html" class="btn btn-secondary">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="projects-main">
+        <div class="container">
+            
+            <header class="projects-header">
+                <h2>Encontre sua próxima experiência</h2>
+                <p>Filtre por área, tipo de trabalho e ajude a comunidade.</p>
+            </header>
+
+            <div class="projects-layout">
+
+                <aside class="projects-filters">
+                    <h4>Filtrar por</h4>
+                    
+                    <div class="filter-group">
+                        <label for="search-term">Termo de Busca</label>
+                        <input type="text" id="search-term" placeholder="Ex: Logotipo, Java, Redes Sociais...">
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="area-atuacao">Área de Atuação</label>
+                        <select id="area-atuacao">
+                            <option value="">Todas as Áreas</option>
+                            <option value="tecnologia">Tecnologia e Programação</option>
+                            <option value="design">Design e Criação</option>
+                            <option value="marketing">Marketing e Comunicação</option>
+                            <option value="educacao">Educação e Reforço Escolar</option>
+                            <option value="direito">Consultoria Jurídica</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>Tipo de Trabalho</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="tipo-voluntario" value="voluntario">
+                            <label for="tipo-voluntario">Voluntário</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="tipo-remunerado" value="remunerado">
+                            <label for="tipo-remunerado">Remunerado</label>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary" style="width: 100%;">Aplicar Filtros</button>
+
+                </aside>
+
+                <section class="projects-results">
+                    
+                    <div class="result-card">
+                        <div class="card-header">
+                            <h3>Desenvolvimento de site para ONG "Adote um Amigo"</h3>
+                            <span class="card-org">Publicado por: ONG Adote um Amigo</span>
+                        </div>
+                        <p class="card-description">Precisamos de um estudante para criar um site simples em WordPress para divulgar nossos animais para adoção. É um trabalho voluntário.</p>
+                        <div class="card-footer">
+                            <div class="card-tags">
+                                <span class="tag tag-voluntario">Voluntário</span>
+                                <span class="tag tag-tecnologia">Tecnologia</span>
+                            </div>
+                            <a href="projeto-detalhe.html" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <div class="card-header">
+                            <h3>Criação de Logo para Pequeno Negócio</h3>
+                            <span class="card-org">Publicado por: Doce Sabor Confeitaria</span>
+                        </div>
+                        <p class="card-description">Sou uma microempreendedora e preciso de um logotipo profissional para minha confeitaria. Ofereço um valor simbólico pelo trabalho.</p>
+                        <div class="card-footer">
+                            <div class="card-tags">
+                                <span class="tag tag-remunerado">Remunerado</span>
+                                <span class="tag tag-design">Design</span>
+                            </div>
+                            <a href="projeto-detalhe.html" class="btn btn-primary">Ver Detalhes</a>
+                        </div>
+                    </div>
+
+                    <div class="result-card">
+                        <div class="card-header">
+                            <h3>Gestão de Redes Sociais para Evento</h3>
+                            <span class="card-org">Publicado por: Coletivo Cultural do Bairro</span>
+                        </div>
+                        <p class="card-description">Buscamos um estudante de comunicação ou marketing para gerenciar nosso Instagram durante o mês do nosso evento cultural (trabalho voluntário).</p>
+                        <div class="card-footer">
+                            <div class="card-tags">
+                                <span class="tag tag-voluntario">Voluntário</span>
+                                <span class="tag tag-marketing">Marketing</span>
+                            </div>
+                            <a href="projeto-detalhe.html" class="btn btn-secondary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    
+                </section>
+
+            </div> </div> </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="logo">UniConecta</h3>
+                    <p>Conectando estudantes universitários a pessoas e organizações que necessitam de soluções simples, promovendo a troca de conhecimento.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="projetos.html">Buscar Projetos</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Central de Ajuda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UniConecta. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

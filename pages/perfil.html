@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - UniConecta</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <link rel="stylesheet" href="../assets/css/perfil.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">UniConecta</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Meu Painel</a></li>
+                    <li><a href="projetos.html">Buscar Projetos</a></li>
+                    <li><a href="novo-projeto.html">Publicar Demanda</a></li>
+                    <li><a href="perfil.html" class="active">Meu Perfil</a></li>
+                    <li><a href="../index.html" class="btn btn-secondary">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="profile-main">
+        <div class="container">
+            
+            <header class="profile-header">
+                <h2>Meu Perfil</h2>
+                <p>Gerencie suas informações pessoais, habilidades e histórico.</p>
+            </header>
+
+            <div class="profile-layout">
+
+                <section class="profile-card">
+                    
+                    <form id="profile-form">
+                        
+                        <div class="profile-pic-uploader">
+                            <img src="../assets/images/profile-image.png" alt="Foto do Perfil">
+                            <a href="#" class="pic-change-link">Trocar foto</a>
+                        </div>
+                        
+                        <h3>Informações Públicas</h3>
+
+                        <div class="profile-field">
+                            <label for="prof-nome">Nome Completo</label>
+                            <input type="text" id="prof-nome" value="Henrique Fernandes">
+                        </div>
+                        
+                        <div class="profile-field">
+                            <label for="prof-bio">Minha Bio / Descrição</label>
+                            <textarea id="prof-bio" rows="5">Estudante de Engenharia de Software na UNIT-PE, focado em desenvolvimento web front-end (React e Vue) e design de interfaces (Figma).</textarea>
+                        </div>
+                        
+                        <div class="profile-field">
+                            <label for="prof-universidade">Minha Universidade</label>
+                            <input type="text" id="prof-universidade" value="Centro Universitário Tiradentes (UNIT-PE)" disabled>
+                        </div>
+                        
+                        <h3 class="form-divider">Informações Privadas</h3>
+                        
+                        <div class="profile-field">
+                            <label for="prof-email">E-mail</label>
+                            <input type="email" id="prof-email" value="hfernandes@email.com" disabled>
+                            <small>Seu e-mail não é exibido publicamente.</small>
+                        </div>
+
+                        <div class="profile-submit">
+                            <button type="submit" class="btn btn-primary btn-large">Salvar Alterações</button>
+                        </div>
+                    </form>
+                </section>
+
+                <aside class="profile-sidebar">
+                    
+                    <div class="sidebar-box" id="skills-box">
+                        <h4>Minhas Habilidades</h4>
+                        <p>Adicione tags para que a comunidade encontre você mais fácil.</p>
+                        
+                        <div class="skills-list">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                        </div>
+                        
+                        <form class="add-skill-form">
+                            <input type="text" placeholder="Adicionar nova habilidade...">
+                            <button class="btn btn-primary" type="submit">+</button>
+                        </form>
+                    </div>
+
+                    <div class="sidebar-box" id="history-box">
+                        <h4>Histórico de Atividades</h4>
+                        
+                        <ul class="history-list">
+                            <li>
+                                <strong>Projeto Concluído:</strong> <a href="projeto-detalhe.html">Desenvolvimento de site para ONG "Adote um Amigo"</a>
+                            </li>
+                            <li>
+                                <strong>Avaliação Recebida:</strong> 5 estrelas de "ONG Adote um Amigo".
+                            </li>
+                             <li>
+                                <strong>Projeto Concluído:</strong> Consultoria de Marketing Digital
+                            </li>
+                        </ul>
+                    </div>
+
+                </aside>
+
+            </div> </div> </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                 <div class="footer-col">
+                    <h3 class="logo">UniConecta</h3>
+                    <p>Conectando estudantes universitários a pessoas e organizações que necessitam de soluções simples, promovendo a troca de conhecimento.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="projetos.html">Buscar Projetos</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Central de Ajuda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UniConecta. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
