@@ -5,24 +5,24 @@
 ![Tecnologia](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Tecnologia](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-[cite_start]Este repositório contém o protótipo de frontend navegável para o projeto **UniConecta**, desenvolvido como parte da 2ª Semana de Extensão (SEMEX)[cite: 4].
+Este repositório contém o protótipo de frontend navegável para o projeto **UniConecta**, desenvolvido como parte da 2ª Semana de Extensão (SEMEX).
 
 ## 🎯 O Projeto
 
-[cite_start]UniConecta é uma plataforma web que visa conectar estudantes universitários em formação a pessoas e organizações que necessitam de soluções simples (como orientações, pequenos serviços, reforço escolar, etc.)[cite: 11].
+UniConecta é uma plataforma web que visa conectar estudantes universitários em formação a pessoas e organizações que necessitam de soluções simples (como orientações, pequenos serviços, reforço escolar, etc.).
 
 ### O Problema
-[cite_start]Estudantes universitários frequentemente enfrentam dificuldade em obter experiência prática durante sua formação, limitando-se ao ambiente teórico[cite: 8]. [cite_start]Ao mesmo tempo, a comunidade (ONGs, pequenos negócios, pessoas físicas) possui demandas simples que não justificam a contratação de profissionais caros[cite: 9].
+Estudantes universitários frequentemente enfrentam dificuldade em obter experiência prática durante sua formação, limitando-se ao ambiente teórico. Ao mesmo tempo, a comunidade (ONGs, pequenos negócios, pessoas físicas) possui demandas simples que não justificam a contratação de profissionais caros.
 
 ### A Solução
-[cite_start]A plataforma promove a troca de conhecimento e a prática profissional, permitindo que estudantes apliquem seus conhecimentos em demandas reais, sejam elas voluntárias ou remuneradas[cite: 11, 14].
+A plataforma promove a troca de conhecimento e a prática profissional, permitindo que estudantes apliquem seus conhecimentos em demandas reais, sejam elas voluntárias ou remuneradas.
 
 ## ✨ Funcionalidades Principais (Visão do Projeto)
 
-* [cite_start]**Conexão Inteligente:** Cadastro de estudantes e comunidade, segmentado por áreas de atuação[cite: 13].
-* [cite_start]**Oportunidades:** Oferta de trabalhos pagos e voluntários[cite: 14].
-* [cite_start]**Certificação:** Sistema de registro de horas complementares validado por instituições de ensino[cite: 15].
-* [cite_start]**Confiança:** Implementação de mecanismos de avaliação e feedback mútuo[cite: 16].
+* **Conexão Inteligente:** Cadastro de estudantes e comunidade, segmentado por áreas de atuação.
+* **Oportunidades:** Oferta de trabalhos pagos e voluntários.
+* **Certificação:** Sistema de registro de horas complementares validado por instituições de ensin.
+* **Confiança:** Implementação de mecanismos de avaliação e feedback mútuo.
 
 ## 💻 Status Atual: Protótipo de Frontend
 
@@ -52,7 +52,7 @@ O protótipo inclui as seguintes telas:
 * **JavaScript (Vanilla):** Usado para simular o login (redirecionamento) e o envio de formulários, permitindo a navegação completa do protótipo para demonstrações.
 
 ### Stack Tecnológica Proposta (Documento Original)
-[cite_start]O documento de arquitetura do projeto sugeriu o uso das seguintes tecnologias para a versão final[cite: 199]:
+O documento de arquitetura do projeto sugeriu o uso das seguintes tecnologias para a versão final[cite: 199]:
 * **Frontend:** React + Next.js + TailwindCSS
 * **Backend:** Node.js + Express
 * **Banco de Dados:** SQLite (inicial) / PostgreSQL (avançado)
@@ -64,7 +64,7 @@ Como este é um projeto de frontend estático, você não precisa de um servidor
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [URL_DO_SEU_REPOSITORIO]
+    git clone https://github.com/paulosnp/uniconecta-project
     ```
 2.  **Abra o projeto:**
     Navegue até a pasta do projeto e abra o arquivo `index.html` no seu navegador de preferência.
